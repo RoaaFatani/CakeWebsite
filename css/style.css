@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Optima,'poppins', sans-serif;
+    
+}
+
+#banner{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background:linear-gradient(#fee7e7,rgb(255, 255, 255,0.2)), url(../images/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+
+    position:absolute;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 150px;
+
+}
+.banner-text h1{
+    color:#7fdae6;
+    font-size: 130px;
+    font-family: 'Kaushan Script',cursive;
+}
+.banner-text p{
+    font-size: 40px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto 0 ;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #7fdae6;
+    border: 2px solid #7fdae6;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s ;
+}
+.banner-btn a span{
+    width:0% ;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #7fdae6;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+    
+}
+.banner-btn a:hover {
+    color:white;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #ffcccc;
+    z-index: 2;
+    transition: 0.5s;
+}
+li > a:hover{
+    color: #7fdae6;
+}
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+#manuBtn{
+    width: 50px;
+    height: 50px;
+    background:#ffcccc ;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#manuBtn img{
+    width: 20px;
+    margin-top: 15px;
+
+
+}
+
+@media screen and (max-width:770px){
+    .banner-text h1{
+        font-size: 50px;
+    }
+    .banner-text p{
+        font-size: 20px;
+    }
+    .banner-btn a{
+        display:block ;
+        margin: 20px auto;
+    }
+}
+/*nav*/
+
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color:#fff;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #7fdae6;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 15px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color:#ffcccc;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #fee7e7;
+    padding-left: 8px;
+    overflow-y: a;
+
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  /**/
+/*---------------consol---------------------*/
+main.blog{
+    background: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height:100vh;
+    width: 100%;
+    
+}
+/*------------contant------------------*/
+/*find us*/
+.form{
+  
+  text-align: center; 
+  font-size:x-large;
+
+}
+#myform{
+   
+   color: #8fdce6;
+   text-align: center;
+}
+
+/*slide png */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+/*instgram*/
+.pic-instgram{
+  transition: 1s;
+}
+.pic-instgram :hover{
+  transform: scale(1.3);
+  z-index: 2;
+}
+#slidepng{
+    background-color: #fee7e7;
+
+}
+.column {
+    text-align: center;
+    width: 33.33%;
+    padding: 5px;
+    transition: 1s;
+  }
+.column :hover{
+  transform: scale(0.9);
+  z-index: 2;
+}
+
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content:"";
+    clear: both;
+    display: table;
+  }
+.row > .column {
+ text-align: center;
+  padding: 16px 16px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 31%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#features{
+width: 100%;
+padding:70px 0 ;
+
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #ffcccc;
+    font-weight:lighter;
+    position: relative;
+    z-index:1 ;
+    display: inline-block;
+}
+
+.title-text h1 {
+    font-size:30px ;
+    color: #7fdae6;
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    color: #ffcccc;
+
+}
+.features{
+    flex-basis:50% ;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+    transition: 1s;
+}
+.features-img :hover{
+  transform: scale(1.3);
+  z-index: 2;
+}
+.features-img img {
+    width:70%;
+    height: 400px;
+    width: 270px;
+    border-radius: 10px;
+}
+
+/*best saller*/
+#saller{
+    width: 100%;
+    padding: 70px 0;
+    background: #fff4f4dd;
+}
+.saller-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-saller{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-saller img{
+    width: 100%;
+    border-radius: 7px ;
+}
+.overlay{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),#ffccccd6);
+    opacity:0;
+    transition: 1s;
+}
+.single-saller:hover .overlay{
+    opacity: 1;
+
+}
+.saller-des{
+    width:80%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+
+}
+.saller-des p{
+    font-size: 14px;
+}
+.single-saller:hover .saller-des{
+    bottom: 40%;
+    opacity: 1;
+
+}
+/*instgram*/
+.instgram{
+background-color:white ;
+padding: 50px 100px 50px 500px;
+}
+
+.instgram img{
+  height: 150px;
+  width: 150px;
+}
+#beforefooter{
+  background-color:#fff4f4dd ;
+}
+#working{
+    background-color: #fee7e7;
+}
+/*----------footer------------*/
+#footer{
+    padding: 100px 0 20px ;
+    background:#fff;
+}
+.footer-row{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    margin: 25px ;
+}
